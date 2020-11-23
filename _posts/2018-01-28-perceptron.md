@@ -1,10 +1,10 @@
 ---
-title: "Web Application Project"
-date: 2020-08-07
-tags: [django, css, javascript, api, stocks data]
+title: "NYC Taxi Fare Prediction"
+date: 2020-07-06
+tags: [machine learning, xgboost, correlation matrix]
 header:
   image: "/images/perceptron/percept.jpg"
-excerpt: "Data Wrangling, Data Science, Messy Data"
+excerpt: "Machine Learning, Data Science, Xgboost"
 mathjax: "true"
 ---
 
@@ -14,7 +14,7 @@ In this project, we "enter" a Kaggle competittion to build a model to predict NY
 
 https://www.kaggle.com/c/new-york-city-taxi-fare-prediction/overview
 
-###**Reading Data**
+### **Reading Data**
 
 
 ```python
@@ -56,7 +56,7 @@ lga_coords = [40.78, 73.87]
 
 One of the most decisive factors in deciding which features to include in training our models is the feature correlation matrix. This matrix computes the covariances between every feature in our training data and then normalizes it to a coefficient between +1 and -1. +1 indicates a strong linear relationship, where one feature moves the other feature moves at exactly the same slope. A value of 0 indicates no relationship and a value of -1 indicates a polar opposite relationship. We explored to see if there was any correlation between taxi fares from transit hubs and found that there is a correlation coefficient of 0.25 between airports and taxi fares. We tried this same approach with Port Authority, Penn Station, and Grand Central but none had any positive impact on performance.
 
-###**Added Manhattan and Euclidean Features**
+### **Added Manhattan and Euclidean Features**
 
 
 ```python
