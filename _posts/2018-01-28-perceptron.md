@@ -8,7 +8,7 @@ excerpt: "Data Wrangling, Data Science, Messy Data"
 mathjax: "true"
 ---
 
-###**Introduction**
+### **Introduction**
 
 In this project, we "enter" a Kaggle competittion to build a model to predict NYC taxi fares. The competition expired so we can't formally submit and show our scores so here we select a subset of training data and build an ensemble model to predict the fare. This is a regression problem so our performance is measured in RMSE, or root mean-squared error. We take the differences between our predictions and the actual fares and square root of the square of this value. Taking the square of the error provides more insight than the absolute value of difference because it provides more penalty to estimates with larger error and rewards estimates with smaller error. The features provided in the training data proved to be very poor predictors of taxi fare so we had to engineer our own features. We used several distance features because distance is the predominant driver of fare prices, all of which were calculated from pickup and dropoff GPS coordinates, along with identifying airports as hotspots for more expensive fares. 
 
@@ -45,7 +45,7 @@ import urllib.request
 
 Above, we read in the training CSV file and break it up into smaller files so we only needed to load a very small subset of the data when training and testing our model. Ultimately we commented out the code because it takes too long to upload the train.csv file to Colab, we left it here commented out to show how we generated our Pickle file.
 
-###**Correlation Exploration**
+### **Correlation Exploration**
 
 
 ```python
@@ -83,7 +83,7 @@ def fix_negative_predictions(pred):
 
 If a prediction is negative we will change it to the mean fare value. In the case of taxi fares mean estimates are more reliable than median estimates. Note that this is only used for predictions on the test data set which we don't use here because the Kaggle competition already closed.
 
-###**Trim Data**
+### **Trim Data**
 
 
 ```python
@@ -102,7 +102,7 @@ train_df.dropna(inplace=True)
 
 There are too many entries in the dataset to train a model based on all 55 million of them. That would also lead to overfitting so we decided to trim it down to 4 million records for simplicity. The subset of records we are using is stored in a .pkl file hosted in an AWS S3 bucket for resiliency.
 
-###**Coordinate Manipulations**
+### **Coordinate Manipulations**
 
 
 ```python
@@ -149,7 +149,7 @@ train_df['manhattan_distance'] = manhattan_distance(train_df['pickup_longitude']
 
 Here, we calculate both the Manhattan and Euclidean distances along with longitude and latitude distances. As mentioned previously, Manhattan and Euclidean distances provided strong correlation but latitude distance also has a strong correlation coefficient of just under 0.6.
 
-###**Trim Data**
+### **Trim Data**
 
 
 ```python
@@ -198,7 +198,7 @@ reg.fit(X_train, y_train)
 
 
 
-###**Conclusion**
+### **Conclusion**
 
 Here we drop records with missing entries along with other weakly correlated features that don't improve our model. We chose over a dozen Scikit  regression models but none proved to be nearly as effective as XGBoost. It gave us a best RMSE of 3.4976 on the test data while no other models scored less than 5. XGBoost is an ensemble method which has been dominating machine learning algorithm performance and is frequently the best performer in Kaggle competitions. XGBoost stands for eXtreme Gradient Boosting, uses a gradient boosted ensemble decision tree method that trains many learners with the ultimate prediction being the prediction the most learners selected. It trades off "frills" and extra features and is focused almost exclusively on speed and performance. 
 
