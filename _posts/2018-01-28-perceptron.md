@@ -10,7 +10,7 @@ mathjax: "true"
 
 ### **Introduction**
 
-In this project, we "enter" a Kaggle competittion to build a model to predict NYC taxi fares. The competition expired so we can't formally submit and show our scores so here we select a subset of training data and build an ensemble model to predict the fare. This is a regression problem so our performance is measured in RMSE, or root mean-squared error. We take the differences between our predictions and the actual fares and square root of the square of this value. Taking the square of the error provides more insight than the absolute value of difference because it provides more penalty to estimates with larger error and rewards estimates with smaller error. The features provided in the training data proved to be very poor predictors of taxi fare so we had to engineer our own features. We used several distance features because distance is the predominant driver of fare prices, all of which were calculated from pickup and dropoff GPS coordinates, along with identifying airports as hotspots for more expensive fares. 
+In this project, we "enter" a Kaggle competition to build a model to predict NYC taxi fares. The competition expired so we can't formally submit and show our scores so here we select a subset of training data and build an ensemble model to predict the fare. This is a regression problem so our performance is measured in RMSE, or root mean-squared error. We take the differences between our predictions and the actual fares and square root of the square of this value. Taking the square of the error provides more insight than the absolute value of difference because it provides more penalty to estimates with larger error and rewards estimates with smaller error. The features provided in the training data proved to be very poor predictors of taxi fare so we had to engineer our own features. We used several distance features because distance is the predominant driver of fare prices, all of which were calculated from pickup and dropoff GPS coordinates, along with identifying airports as hotspots for more expensive fares. 
 
 https://www.kaggle.com/c/new-york-city-taxi-fare-prediction/overview
 
@@ -87,7 +87,6 @@ If a prediction is negative we will change it to the mean fare value. In the cas
 
 
 ```python
-urllib.request.urlretrieve("https://mark-test-bucket-123.s3.amazonaws.com/data_1.pkl", "data_1.pkl")
 
 data_p_files=[]
 for name in glob.glob("data_1.pkl"):
@@ -211,3 +210,8 @@ Here is a screenshot of our Kaggle score:
 ![alt text](https://mark-test-bucket-123.s3.amazonaws.com/Screen+Shot+2020-07-01+at+10.32.28+AM.png)
 
 Our top score is 3.4976, we are very pleased with these results.
+
+
+```python
+
+```
