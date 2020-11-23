@@ -1,7 +1,7 @@
 ---
-title: "Data Wrangling Project"
-date: 2018-01-28
-tags: [data wrangling, data science, messy data]
+title: "Web Application Project"
+date: 2020-08-07
+tags: [django, css, javascript, api, stocks data]
 header:
   image: "/images/perceptron/percept.jpg"
 excerpt: "Data Wrangling, Data Science, Messy Data"
