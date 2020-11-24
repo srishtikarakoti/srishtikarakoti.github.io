@@ -428,7 +428,7 @@ plt.show()
 ```
 
 
-![png](output_11_0.png)
+<img src="/images/Predicting Home Prices/output_11_0.png">  
 
 
 #### Pair plot
