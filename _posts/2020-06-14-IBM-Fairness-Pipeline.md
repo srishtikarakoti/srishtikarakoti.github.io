@@ -3,7 +3,7 @@ title: "IBM Fairness Pipeline"
 date: 2020-06-14
 tags: [machine learning, AI Fairness 360]
 header:
-  image: "/images/NYCTaxi.png"
+  image: "/images/IBMFP.png"
 excerpt: "Machine Learning, AI Fairness 360"
 mathjax: "true"
 ---
