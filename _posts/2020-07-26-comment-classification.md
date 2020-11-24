@@ -444,3 +444,6 @@ model.fit(X_t,y, batch_size=batch_size, epochs=epochs, validation_split=0.1)
 # Conclusion
 
 The accuracy is very good. Keras cuts down a lot of time and one does not have to spend a ton of time defining the right dimensions for matrices. Keras is an open-source neural-network library written in Python. It is capable of running on top of TensorFlow, Microsoft Cognitive Toolkit, R, Theano, or PlaidML. Designed to enable fast experimentation with deep neural networks, it focuses on being user-friendly, modular, and extensible. Now, instead of spending time on defining the right dimentions for matrices, I can spend time on experimenting with different variations of model.
+
+
+
