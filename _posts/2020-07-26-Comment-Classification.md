@@ -3,7 +3,7 @@ title: "Comment Classification"
 date: 2020-07-26
 tags: [machine learning, numpy, pandas, keras]
 header:
-  image: "/images/perceptron/percept.jpg"
+  image: "/images/CommentClassification.jpg"
 excerpt: "Machine Learning, Data Science, Keras"
 mathjax: "true"
 ---
