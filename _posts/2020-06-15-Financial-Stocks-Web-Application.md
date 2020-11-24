@@ -9,7 +9,6 @@ mathjax: "true"
 ---
 
 
-# Web-Application-Django_Stocks
 
 I designed a web application to keep track of my stock portfolio. It has 3 views.
 
