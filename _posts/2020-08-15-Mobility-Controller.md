@@ -3,7 +3,7 @@ title: "COVID-19 Mobility Control"
 date: 2020-08-15
 tags: [machine learning, data science, numpy, pandas, matplotlib]
 header:
-  image: "/images/perceptron/percept.jpg"
+  image: "/images/Mobility.png"
 excerpt: "Machine Learning, Data Science, Numpy, Pandas, Matplotlib"
 mathjax: "true"
 ---
