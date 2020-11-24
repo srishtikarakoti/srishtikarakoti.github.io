@@ -15,7 +15,7 @@ The purpose of this project is to build a multi-headed model that’s capable of
 
 https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 
-#Import libraries and load data
+# Import libraries and load data
 Import the standard keras library
 
 
@@ -283,7 +283,7 @@ plt.show()
 ```
 
 
-![png](output_18_0.png)
+
 
 
 
