@@ -34,7 +34,7 @@ Image(filename=PATH_IMAGE)
 
 
 
-![png](output_2_0.png)
+"/images/output_2_0.png"
 
 
 
