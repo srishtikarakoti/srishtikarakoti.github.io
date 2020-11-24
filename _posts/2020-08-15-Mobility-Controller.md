@@ -33,8 +33,7 @@ Image(filename=PATH_IMAGE)
 
 
 
-
-"/images/output_2_0.png"
+<img src="/images/output_2_0.png">
 
 
 
