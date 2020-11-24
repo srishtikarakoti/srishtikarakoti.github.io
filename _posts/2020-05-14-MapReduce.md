@@ -3,7 +3,7 @@ title: "MapReduce Poker Problem"
 date: 2020-05-14
 tags: [hadoop, mapreduce, aws]
 header:
-  image: "/images/perceptron/percept.jpg"
+  image: 
 excerpt: "Hadoop, Mapreduce, AWS"
 mathjax: "true"
 ---
