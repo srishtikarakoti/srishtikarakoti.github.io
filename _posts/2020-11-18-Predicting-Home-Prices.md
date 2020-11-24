@@ -446,7 +446,7 @@ sns.pairplot(train, palette='rainbow')
 
 
 
-![png](output_13_1.png)
+<img src="/images/Predicting Home Prices/output_13_1.png">
 
 
 #### CDF And Pdf for yearbuilt feature
@@ -470,7 +470,7 @@ plt.show();
 
 
 
-![png](output_15_1.png)
+<img src="/images/Predicting Home Prices/output_15_1.png">
 
 
 #### LMPLOT for yearbuilt
@@ -487,8 +487,7 @@ sns.lmplot(x='YearBuilt',y='SalePrice',data=train)
 
 
 
-
-![png](output_17_1.png)
+<img src="/images/Predicting Home Prices/output_17_1.png">
 
 
 
@@ -514,8 +513,7 @@ plt.show();
      2010. ]
 
 
-
-![png](output_18_1.png)
+<img src="/images/Predicting Home Prices/output_18_1.png">
 
 
 #### Box plot for GarageCars feature
@@ -527,8 +525,8 @@ sns.boxplot(x='GarageCars',y='SalePrice',data=train)
 plt.show()
 ```
 
+<img src="/images/Predicting Home Prices/output_20_0.png">
 
-![png](output_20_0.png)
 
 
 
@@ -549,8 +547,9 @@ plt.show();
     [0.  0.4 0.8 1.2 1.6 2.  2.4 2.8 3.2 3.6 4. ]
 
 
+<img src="/images/Predicting Home Prices/output_21_1.png">
 
-![png](output_21_1.png)
+
 
 
 
@@ -560,8 +559,8 @@ sns.barplot(x='GarageArea',y = 'SalePrice',data=train, estimator=np.mean)
 plt.show()
 ```
 
+<img src="/images/Predicting Home Prices/output_22_0.png">
 
-![png](output_22_0.png)
 
 
 
@@ -583,8 +582,8 @@ plt.show();
      1418. ]
 
 
+<img src="/images/Predicting Home Prices/output_23_1.png">
 
-![png](output_23_1.png)
 
 
 
@@ -594,8 +593,8 @@ sns.barplot(x='FullBath',y = 'SalePrice',data=train)
 plt.show()
 ```
 
+<img src="/images/Predicting Home Prices/output_24_0.png">
 
-![png](output_24_0.png)
 
 
 
@@ -616,8 +615,9 @@ plt.show();
     [0.  0.3 0.6 0.9 1.2 1.5 1.8 2.1 2.4 2.7 3. ]
 
 
+<img src="/images/Predicting Home Prices/output_25_1.png">
 
-![png](output_25_1.png)
+
 
 
 
@@ -632,8 +632,9 @@ sns.lmplot(x='1stFlrSF',y='SalePrice',data=train)
 
 
 
+<img src="/images/Predicting Home Prices/output_26_1.png">
 
-![png](output_26_1.png)
+
 
 
 
@@ -648,8 +649,9 @@ sns.boxplot(x='1stFlrSF',y='SalePrice',data=train)
 
 
 
+<img src="/images/Predicting Home Prices/output_27_1.png">
 
-![png](output_27_1.png)
+
 
 
 # Feature Engineering
@@ -1200,8 +1202,9 @@ plt.ylabel('Predicted Y')
 plt.show()
 ```
 
+<img src="/images/Predicting Home Prices/output_55_0.png">
 
-![png](output_55_0.png)
+
 
 
 ### Regression Evaluation Metrics
@@ -1307,12 +1310,14 @@ plt.ylabel('Predicted Y')
 plt.show()
 ```
 
-
-![png](output_64_0.png)
-
+<img src="/images/Predicting Home Prices/output_64_0.png">
 
 
-![png](output_64_1.png)
+
+
+<img src="/images/Predicting Home Prices/output_64_1.png">
+
+
 
 
 # Decision Tree Regression
@@ -1369,12 +1374,14 @@ plt.ylabel('Predicted Y')
 plt.show()
 ```
 
-
-![png](output_69_0.png)
-
+<img src="/images/Predicting Home Prices/output_69_0.png">
 
 
-![png](output_69_1.png)
+
+
+<img src="/images/Predicting Home Prices/output_69_1.png">
+
+
 
 
 # Support Vector Machine Regression
@@ -1429,12 +1436,14 @@ plt.ylabel('Predicted Y')
 plt.show()
 ```
 
-
-![png](output_74_0.png)
-
+<img src="/images/Predicting Home Prices/output_74_0.png">
 
 
-![png](output_74_1.png)
+
+
+<img src="/images/Predicting Home Prices/output_74_1.png">
+
+
 
 
 # Model Comparison
@@ -1468,8 +1477,8 @@ models = ['SVM','LR','BGT','DT']
      2.20636502e-01]
 
 
+<img src="/images/Predicting Home Prices/output_77_1.png">
 
-![png](output_77_1.png)
 
 
 Now we will use test data .
