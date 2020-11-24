@@ -59,7 +59,7 @@ As output we have a confirmation.csv file.
 ### Methodology
 To guide us we followed Professor Pantelis comments: “The human density you have across Manhattan can be represented as a sequence of matrices across time (1h intervals is giving you 24 matrices). You have matrices that one zone is a hotspot in some and others that are not even if your policy is “do nothing”. So lets assume now that you have a model and you draw trips from then a sufficient simulation interval of 1h you will be matching the raw data you model considered to begin with for that interval. For that 1h interval the controller lets assume that does *not* know the model and therefore cant a priori design a policy. There are controllers that are model-based but lets not go there in this project. The only thing that it will do then, it will start accepting all trips initially until a certain level of number of drop offs (maximum number of bookings for the destination also known as capacity threshold) and it will rebook the trip to another time slot confirming it for that slot only. The rebooking may cause the agent to cancel the confirmed rebooked trip. The state that you keep is the booking and rebookings you have confirmed minus the cancellations so you know your leftover capacity.”  
 
-###Structures and constants
+### Structures and constants
 
 
 
@@ -600,15 +600,15 @@ for i in range(201,205):
 ```
 
 
-![png](output_20_0.png)
+<img src="/images/output_20_0.png">
 
 
 
-![png](output_20_1.png)
+<img src="/images/output_20_1.png">
 
 
 
-![png](output_20_2.png)
+<img src="/images/output_20_2.png">
 
 
 #### Self check section
