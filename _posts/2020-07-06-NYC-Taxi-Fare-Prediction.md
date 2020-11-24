@@ -3,7 +3,7 @@ title: "NYC Taxi Fare Prediction"
 date: 2020-07-06
 tags: [machine learning, xgboost, correlation matrix]
 header:
-  image: 
+  image: "/images/perceptron/percept.jpg"
 excerpt: "Machine Learning, Data Science, Xgboost"
 mathjax: "true"
 ---
