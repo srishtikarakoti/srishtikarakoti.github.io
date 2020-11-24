@@ -1,5 +1,5 @@
 ---
-title: "Comment Classification Project"
+title: "Comment Classification"
 date: 2020-07-26
 tags: [machine learning, numpy, pandas, keras]
 header:
